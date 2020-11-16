@@ -7,8 +7,8 @@ const requestListener = function (req, res) {
 const server = http.createServer(requestListener);
 
 if (process.argv[2] === undefined) {
-    process.exit();
+  process.exit();
 } else {
-    server.listen(process.argv[2]);
-    console.log('usage : node e01.js port ' + server.address().port)
+  server.listen(process.argv[2]);
+  console.log('usage : node e01.js port ' + server.address().port)
 }
